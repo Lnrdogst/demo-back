@@ -22,3 +22,15 @@ Esta sujeto a cambios
 `git commit -m "mensaje"      # Guardar los cambios`
 `git push                     # Subir al repo`
 `git status                   # Ver en qué estás`
+
+
+
+### Estructuras:
+Estructura general de una entidad
+
+`@Entity`  
+`public class NOMBRE_DE_LA_ENTIDAD {`  
+`@Id`  
+`@GeneratedValue(strategy = GenerationType.IDENTITY)`  
+`private Long id;`  
+`}`
