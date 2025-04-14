@@ -29,7 +29,7 @@ Esta sujeto a cambios
 
 
 
-### Estructuras:
+## Estructuras:
 
 #### Entidad
 
@@ -120,3 +120,9 @@ Esta sujeto a cambios
         artistaRepository.deleteById(id);
     }
 
+#### Repository
+`@Repository`  
+`public interface ArtistaRepository extends JpaRepository<Artista, Long> {`  
+`Optional<Artista> findByUsername(String username);`
+
+`}`
