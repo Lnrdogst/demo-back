@@ -5,4 +5,10 @@ def multiplicar(a, b):
     return a * b
 
 if __name__ == "__main__":
-    print("3 x 4 =", multiplicar(3, 4))
+    try:
+        num1 = float(input("Ingresa numero 1: "))
+        num2 = float(input("Ingresa numero 2: "))
+        resul = multiplicar(num1, num2)
+        print(f"{num1} x {num2} = {resul}")
+    except ValueError:
+        print("Debes ingresar valores numericos.")
